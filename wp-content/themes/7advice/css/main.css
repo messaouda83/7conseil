@@ -1,8 +1,111 @@
-header{
-    background:#111;
-    width:100%;
-    height:100px;
+
+header {
+	 background: #111; 
+	width: 100%;
+    height: 100px; 
 }
-.page-wrap{
-    padding:2rem 0;
+
+.navbar-brand {
+	 margin-right: 2em; 
+}
+
+.widget {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-wrap {
+	padding: 2rem 0;
+}
+
+header .top-bar {
+	list-style-type: none;
+	/* Enleve les puces*/
+	margin: 0;
+	padding: 0;
+	display: flex;
+	/* Met les elements sur une ligne*/
+}
+
+header .top-bar li a {
+	padding: 0.25rem 1rem;
+	/* Espacement entre les elements*/
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header .top-bar li {
+
+	position: relative;
+}
+
+header .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+header .top-bar li:first-child a {
+	padding-left: 0;
+	/* Enleve le padding-left du premier element*/
+}
+
+header .top-bar li:last-child a {
+	padding-right: 0;
+	/* Enleve le padding-right du dernier element*/
+}
+
+header .top-bar li .sub-menu {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.1);
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 300px;
+	border-radius: .2rem;
+	-webkit-border-radius: .2rem;
+	-moz-border-radius: .2rem;
+	-ms-border-radius: .2rem;
+	-o-border-radius: .2rem;
+}
+
+header .top-bar li .sub-menu a {
+	color: #a22631;
+	padding: 0.25rem;
+    /*text-align: center;*/
+    margin-left:50px;
+	display: block;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header .top-bar li .sub-menu a:hover {
+
+	color: black;
+
+}
+
+header .top-bar>.menu-item-has-children:hover>.sub-menu {
+	display: block;
+}
+
+header .top-bar>.sub-menu>li>.menu-item-has-children:hover .sub-menu {
+	display: block;
+}
+
+header .top-bar .sub-menu li .sub-menu {
+	left: 100%;
+	top: 0;
+}
+
+.bg {
+    background-color:#222c54;
 }
