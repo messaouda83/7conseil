@@ -13,7 +13,7 @@
 
     
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg mb-4">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg mb-3">
             <a class="navbar-brand text-muted font-italic col-2" href="#"><?php bloginfo('name') ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                
