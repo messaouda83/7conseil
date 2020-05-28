@@ -10,4 +10,4 @@
     
 </section>
 
-<?php get_footer();?>gi
+<?php get_footer();?>
