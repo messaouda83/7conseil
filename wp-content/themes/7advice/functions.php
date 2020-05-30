@@ -67,8 +67,8 @@ register_sidebar(
     array(
         'name'=> 'page sidebar',
         'id'=> 'page-sidebar',
-        'before_title' => '<h4 class="widgets-title">',
-         'after_title' => '</h4>'
+        'before_title' => '<h3 class="widgets-title">',
+         'after_title' => '</h3>'
     )
     );
     
@@ -77,8 +77,8 @@ register_sidebar(
     array(
         'name'=> 'blog sidebar',
         'id'=> 'blog-sidebar',
-        'before_title' => '<h4 class="widgets-title">',
-         'after_title' => '</h4>'
+        'before_title' => '<h3 class="widgets-title">',
+         'after_title' => '</h3>'
     )
     );
 }
