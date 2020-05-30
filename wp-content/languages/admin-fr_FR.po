@@ -2149,8 +2149,8 @@ msgid "Theme could not be resumed because it triggered a <strong>fatal error</st
 msgstr "Le thème n’a pas pu être relancé car il a déclenché une <strong>erreur fatale</strong>."
 
 #: wp-admin/plugins.php:513
-msgid "If you notice &#8220;headers already sent&#8221; messages, problems with syndication feeds or other issues, try deactivating or removing this plugin."
-msgstr "Si vous remarquez des messages « headers already sent », des problèmes avec vos flux de syndication ou d’autres soucis, essayez de désactiver ou de supprimer cette extension."
+msgid "If you notice &#8220;.navbars already sent&#8221; messages, problems with syndication feeds or other issues, try deactivating or removing this plugin."
+msgstr "Si vous remarquez des messages « .navbars already sent », des problèmes avec vos flux de syndication ou d’autres soucis, essayez de désactiver ou de supprimer cette extension."
 
 #. translators: %d: Number of characters.
 #: wp-admin/plugins.php:506
@@ -2545,7 +2545,7 @@ msgstr "Modèle par défaut"
 msgid "This meta box, from the %s plugin, isn't compatible with the block editor."
 msgstr "Cette boîte méta de l’extension %s n’est pas compatible avec le nouvel éditeur."
 
-#. translators: Header for the About section in a personal data export.
+#. translators: .navbar for the About section in a personal data export.
 #: wp-admin/includes/privacy-tools.php:371
 msgctxt "personal data group label"
 msgid "About"
@@ -3921,7 +3921,7 @@ msgid "Current Background Image"
 msgstr "Image d’arrière plan actuelle"
 
 #: wp-admin/includes/template.php:2202
-msgid "Current Header Image"
+msgid "Current .navbar Image"
 msgstr "Image d’en-tête actuelle"
 
 #: wp-admin/includes/plugin-install.php:335
@@ -3972,7 +3972,7 @@ msgstr "Répétition"
 #: wp-admin/options-reading.php:52 wp-admin/edit-tags.php:311
 #: wp-admin/link-manager.php:77 wp-admin/options-writing.php:53
 #: wp-admin/includes/class-custom-background.php:100
-#: wp-admin/includes/class-custom-image-header.php:135 wp-admin/my-sites.php:52
+#: wp-admin/includes/class-custom-image-.navbar.php:135 wp-admin/my-sites.php:52
 #: wp-admin/options-general.php:49 wp-admin/comment.php:57
 #: wp-admin/theme-editor.php:55 wp-admin/plugin-editor.php:143
 #: wp-admin/nav-menus.php:605 wp-admin/update-core.php:727
@@ -4289,7 +4289,7 @@ msgid "Embed Footer Template"
 msgstr "Modèle intégré de pied de page"
 
 #: wp-admin/includes/file.php:50
-msgid "Embed Header Template"
+msgid "Embed .navbar Template"
 msgstr "Modèle intégré d’en-tête"
 
 #: wp-admin/includes/file.php:49
@@ -4390,8 +4390,8 @@ msgstr "Vous pouvez filtrer la liste des articles par état en utilisant les lie
 msgid "Close the Customizer and go back to the previous page"
 msgstr "Fermer l’outil de personnalisation et retour vers la page précédente."
 
-#: wp-admin/includes/class-custom-image-header.php:1029
-msgid "Sorry, you are not allowed to customize headers."
+#: wp-admin/includes/class-custom-image-.navbar.php:1029
+msgid "Sorry, you are not allowed to customize .navbars."
 msgstr "Désolé, vous n’avez pas l’autorisation de personnaliser les en-têtes."
 
 #: wp-admin/credits.php:145
@@ -4809,31 +4809,31 @@ msgid "Pending"
 msgstr "En attente"
 
 #. translators: %s: Size in pixels.
-#: wp-admin/includes/class-custom-image-header.php:596
+#: wp-admin/includes/class-custom-image-.navbar.php:596
 msgid "Suggested height is %s."
 msgstr "La hauteur suggérée est de %s."
 
 #. translators: %s: Size in pixels.
-#: wp-admin/includes/class-custom-image-header.php:585
+#: wp-admin/includes/class-custom-image-.navbar.php:585
 msgid "Suggested width is %s."
 msgstr "La taille suggérée est de %s."
 
 #. translators: %s: Size in pixels.
-#: wp-admin/includes/class-custom-image-header.php:572
+#: wp-admin/includes/class-custom-image-.navbar.php:572
 msgid "Images should be at least %s tall."
 msgstr "Les images devraient faire au moins %s de haut."
 
-#. translators: %d: Custom header width.
-#. translators: %d: Custom header height.
-#: wp-admin/includes/class-custom-image-header.php:563
-#: wp-admin/includes/class-custom-image-header.php:575
-#: wp-admin/includes/class-custom-image-header.php:588
-#: wp-admin/includes/class-custom-image-header.php:599
+#. translators: %d: Custom .navbar width.
+#. translators: %d: Custom .navbar height.
+#: wp-admin/includes/class-custom-image-.navbar.php:563
+#: wp-admin/includes/class-custom-image-.navbar.php:575
+#: wp-admin/includes/class-custom-image-.navbar.php:588
+#: wp-admin/includes/class-custom-image-.navbar.php:599
 msgid "%d pixels"
 msgstr "%d pixels"
 
 #. translators: %s: Size in pixels.
-#: wp-admin/includes/class-custom-image-header.php:560
+#: wp-admin/includes/class-custom-image-.navbar.php:560
 msgid "Images should be at least %s wide."
 msgstr "Les images doivent être large de %s minimum."
 
@@ -4936,7 +4936,7 @@ msgstr "Le thème n’a pas de fichier %s."
 
 #. translators: %s: style.css
 #: wp-admin/includes/class-theme-upgrader.php:498
-msgid "The %s stylesheet doesn&#8217;t contain a valid theme header."
+msgid "The %s stylesheet doesn&#8217;t contain a valid theme .navbar."
 msgstr "Le fichier %s ne contient pas d’en-tête de thème valide."
 
 #. translators: %s: style.css
@@ -5134,7 +5134,7 @@ msgstr "Modifier le permalien"
 
 #. translators: 1: Site Wide Only: true, 2: Network: true
 #: wp-admin/includes/plugin.php:91
-msgid "The %1$s plugin header is deprecated. Use %2$s instead."
+msgid "The %1$s plugin .navbar is deprecated. Use %2$s instead."
 msgstr "L’en-tête d’extensions %1$s est obsolète. Utilisez plutôt %2$s."
 
 #: wp-admin/includes/class-wp-site-health.php:972
@@ -5195,7 +5195,7 @@ msgid "Invalid image URL"
 msgstr "Adresse web non valide pour l’image"
 
 #: wp-admin/includes/file.php:17
-msgid "Theme Header"
+msgid "Theme .navbar"
 msgstr "En-tête du thème"
 
 #: wp-admin/includes/file.php:18
@@ -5418,13 +5418,13 @@ msgstr "Dans la colonne <strong>Commentaire</strong>, survolez n’importe quel 
 msgid "Comments (%1$s) on &#8220;%2$s&#8221;"
 msgstr "Commentaires (%1$s) sur « %2$s »"
 
-#: wp-admin/includes/class-custom-image-header.php:948
-msgid "The current theme does not support a flexible sized header image."
+#: wp-admin/includes/class-custom-image-.navbar.php:948
+msgid "The current theme does not support a flexible sized .navbar image."
 msgstr "Le thème actuel ne peut pas utiliser une image d’en-tête à taille variable."
 
-#: wp-admin/includes/class-custom-image-header.php:776
-#: wp-admin/includes/class-custom-image-header.php:940
-msgid "The current theme does not support uploading a custom header image."
+#: wp-admin/includes/class-custom-image-.navbar.php:776
+#: wp-admin/includes/class-custom-image-.navbar.php:940
+msgid "The current theme does not support uploading a custom .navbar image."
 msgstr "Le thème actuel ne permet pas de téléverser une image d’en-tête personnalisée."
 
 #. translators: %s: Comment link.
@@ -5595,9 +5595,9 @@ msgstr "<a href=\"https://codex.wordpress.org/Links_Add_New_Screen\">Documentati
 msgid "<a href=\"https://codex.wordpress.org/Links_Screen\">Documentation on Managing Links</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Links_Screen\">Documentation sur la gestion des liens (en)</a>"
 
-#: wp-admin/includes/class-custom-image-header.php:134
-msgid "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\">Documentation on Custom Header</a>"
-msgstr "<a href=\"https://codex.wordpress.org/fr:Appearance_Header_Screen\">Documentation sur l’en-tête personnalisé</a>"
+#: wp-admin/includes/class-custom-image-.navbar.php:134
+msgid "<a href=\"https://codex.wordpress.org/Appearance_.navbar_Screen\">Documentation on Custom .navbar</a>"
+msgstr "<a href=\"https://codex.wordpress.org/fr:Appearance_.navbar_Screen\">Documentation sur l’en-tête personnalisé</a>"
 
 #: wp-admin/my-sites.php:51
 msgid "<a href=\"https://codex.wordpress.org/Dashboard_My_Sites_Screen\">Documentation on My Sites</a>"
@@ -5675,7 +5675,7 @@ msgstr "Erreur XML&nbsp;: %1$s à la ligne %2$s"
 msgid "Detach"
 msgstr "Détacher"
 
-#: wp-admin/menu-header.php:268
+#: wp-admin/menu-.navbar.php:268
 msgid "Main menu"
 msgstr "Menu principal"
 
@@ -5901,7 +5901,7 @@ msgstr "Impossible de se connecter au système de fichier. Veuillez confirmer vo
 msgid "Y/m/d g:i:s a"
 msgstr "d/m/Y G \\h i \\m\\i\\n s \\s"
 
-#. translators: Column name or table row header.
+#. translators: Column name or table row .navbar.
 #: wp-admin/includes/class-wp-comments-list-table.php:459
 #: wp-admin/comment.php:178
 msgid "In Response To"
