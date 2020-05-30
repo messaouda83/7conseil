@@ -5,7 +5,7 @@ function montheme_supports () {
 }
 
 function montheme_title ($title) {
-	return 'The〈div〉vision 68' . $title;
+	return 'SevenConseil' . $title;
 }
 
 function montheme_title_separator () {
@@ -45,6 +45,9 @@ add_action('wp_enqueue_scripts', 'load_js');
 // Theme Options
 add_theme_support('menus'); // Ajoute l'option "Menus" dans Wordpress -> Apparence
 add_theme_support('post-thumbnails'); // Ajoute l'option "Image mise en avant" lors de l'édition d'un article
+// tailles d'image personnalisées
+add_image_size('blog-large', 800, 400, true);
+add_image_size('blog-small', 300, 200, true);
 add_theme_support('widgets'); // Ajoute l'option "Widgets" dans Wordpress -> Apparence
 
 // Menus
@@ -57,4 +60,26 @@ register_nav_menus(
 		'footer-menu'  => 'Footer Menu Location', // Ajoute l'option "Footer Menu Location" dans Wordpress -> Apparence -> Menus
 	)
 );
+function my_sidebars() {
 
+register_sidebar(
+
+    array(
+        'name'=> 'page sidebar',
+        'id'=> 'page-sidebar',
+        'before_title' => '<h4 class="widgets-title">',
+         'after_title' => '</h4>'
+    )
+    );
+    
+register_sidebar(
+
+    array(
+        'name'=> 'blog sidebar',
+        'id'=> 'blog-sidebar',
+        'before_title' => '<h4 class="widgets-title">',
+         'after_title' => '</h4>'
+    )
+    );
+}
+add_action('widgets_init', 'my_sidebars');
