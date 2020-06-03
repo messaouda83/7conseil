@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<section class="page-wrap mt-5">
+<section class="page-wrap mt-5 mb-5">
 
     <div class="container">
         <?php if(has_post_thumbnail()): ?>

@@ -1,5 +1,5 @@
 <?php get_header();?>
-<section class="page-wrap mt-5">
+<section class="page-wrap mt-5 ">
 <div class="container">
 <section class="row">
 <div class="col-lg-3">
