@@ -1,7 +1,7 @@
 <?php wp_footer(); ?>
 
   <div style="background-color:#1e2d41;">
-    <div class="container-fluid">
+    <div class="container">
 
       <!-- Grid row-->
       <div class="row py-4 d-flex align-items-center">
@@ -13,7 +13,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-6 col-lg-7 text-center text-md-right">
+        <div class="col-md-6 col-lg-7 text-center text-md-right iconsocial">
 
           <!-- Facebook -->
           <a class="fb-ic">
