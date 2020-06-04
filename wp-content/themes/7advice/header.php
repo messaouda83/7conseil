@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>7conseil</title>
     <?php wp_head(); ?>
+
 </head>
 <body>
-    
+ 
 <header>
 
-    
+  
 
         <nav class="navbar navbar-expand-lg navbar-white fixed-top bg">
             <a class="navbar-brand text-bold font-italic col-2" href="#"><?php bloginfo('name') ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                
                 <span class="navbar-toggler-icon "></span>
-
+                <span class="navbar-toggler-icon "></span>
+                <span class="navbar-toggler-icon "></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
