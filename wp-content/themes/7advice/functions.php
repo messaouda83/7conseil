@@ -31,6 +31,14 @@ function load_css()
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
+//* Enqueue Font Awesome
+
+function fontawson() {
+
+        wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css' );
+}
+add_action( 'wp_enqueue_scripts', 'fontawson' );
+
 // Load Javascript
 function load_js()
 {
