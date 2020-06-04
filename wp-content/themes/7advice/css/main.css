@@ -158,11 +158,11 @@ header .top-bar .sub-menu li .sub-menu {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		-webkit-transform:;
-		-ms-transform:;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
-		-moz-transform:;
-		-o-transform:;
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
 }
       
       .notfound .notfound-404 h2 {
