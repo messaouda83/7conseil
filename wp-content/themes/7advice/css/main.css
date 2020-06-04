@@ -273,3 +273,25 @@ color:#fff;
 		background-color: #16202e;
 		color: #c4ccd2;
 	  }
+	  /*Bouton go to top */
+	  #myBtn {
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: #27ae60;
+		color: white;
+		cursor: pointer;
+		padding: 10px;
+		border-radius: 4px;
+	  }
+	  .navbar-toggler-icon {
+		display: block;
+		width: 35px;
+		height: 5px;
+		background-color: white;
+		margin: 6px 0;
+	}
