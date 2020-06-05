@@ -66,5 +66,5 @@
             </div>
 
         </nav>
-        <?php slideshow_show();?>
+       
     </header>

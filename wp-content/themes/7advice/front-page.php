@@ -1,5 +1,5 @@
 <?php get_header();?>
-
+<?php slideshow_show();?>
 <section class="page-wrap ">
 <!-- echo do_shortcode('[smartslider3 slider="1"]'); code php-->
 <div class="container">
