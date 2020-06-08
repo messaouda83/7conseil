@@ -73,11 +73,19 @@ header .top-bar li .sub-menu {
 	list-style-type: none;
 	width: 300px;
 	border-radius: .5rem;
-	-webkit-border-radius: .5rem;
-	-moz-border-radius: .5rem;
-	-ms-border-radius: .5rem;
-	-o-border-radius: .5rem;
+	-webkit-border-radius:;
+	-moz-border-radius:;
+	-ms-border-radius:;
+	-o-border-radius:;
+	transform: rotateY(45deg);
+	border-top: 2px solid #0b4c06;
+	border-bottom: 3px solid #0b4c06;
+	-webkit-transform: rotateY(45deg);
+	-moz-transform: rotateY(45deg);
+	-ms-transform: rotateY(45deg);
+	-o-transform: rotateY(45deg);
 }
+
 
 header .top-bar li .sub-menu a {
 	color: red;
@@ -85,6 +93,12 @@ header .top-bar li .sub-menu a {
 	text-align: center;
 	display: block;
 	text-decoration: none;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	white-space: nowrap;
 }
 
 header .top-bar li .sub-menu a:hover {
@@ -158,11 +172,11 @@ header .top-bar .sub-menu li .sub-menu {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
+		-webkit-transform:;
+		-ms-transform:;
 		transform: translate(-50%, -50%);
-		-moz-transform: translate(-50%, -50%);
-		-o-transform: translate(-50%, -50%);
+		-moz-transform:;
+		-o-transform:;
 }
       
       .notfound .notfound-404 h2 {
@@ -226,7 +240,8 @@ header .top-bar .sub-menu li .sub-menu {
 	}
 	  }
 	  .bg {
-		background: RGBA(12,29,44,1);
+		background: RGBA(12,29,44,1); 
+		
 	  }
 
 	/*style footer */  
@@ -282,12 +297,16 @@ color:#fff;
 		font-size: 18px;
 		border: none;
 		outline: none;
-		background-color: #27ae60;
-		color: white;
+		background-color: #7f8c8d;
+		color: black;
 		cursor: pointer;
 		padding: 10px;
 		border-radius: 4px;
-	  }
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+}
 	  .navbar-toggler-icon {
 		display: block;
 		width: 35px;
@@ -295,3 +314,16 @@ color:#fff;
 		background-color: white;
 		margin: 6px 0;
 	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	  }
+	  
+	  .change .bar2 {opacity: 0;}
+	  
+	  .change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	  }
+	  
