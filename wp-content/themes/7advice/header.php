@@ -11,14 +11,15 @@
 <body>
  
 <header>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <nav class="navbar navbar-expand-lg navbar-white fixed-top bg">
             <a class="navbar-brand text-bold font-italic col-2" href="#"><?php bloginfo('name') ?></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               
-                <span class="navbar-toggler-icon "></span>
-                <span class="navbar-toggler-icon "></span>
-                <span class="navbar-toggler-icon "></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
+          
+                <span class="navbar-toggler-icon bar1"></span>
+                <span class="navbar-toggler-icon bar2"></span>
+                <span class="navbar-toggler-icon bar3"></span>
+            
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
