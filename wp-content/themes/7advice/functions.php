@@ -93,7 +93,13 @@ register_sidebar(
     );
 }
 add_action('widgets_init', 'my_sidebars');
-
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
 
 add_action( 'phpmailer_init', 'send_smtp_email' );
 function send_smtp_email( $phpmailer ) {
@@ -108,5 +114,12 @@ function send_smtp_email( $phpmailer ) {
     $phpmailer->FromName   = SMTP_FROMNAME;
 }
 
+/* Header image wordpress.*/
 
-
+function my_theme_setup() {
+    add_theme_support( 'custom-header', array(
+        'width'  => 2000,
+        'height' => 500,
+    ) );
+}
+add_action( 'after_theme_setup', 'my_theme_setup' );
