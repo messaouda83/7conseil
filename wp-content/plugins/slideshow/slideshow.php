@@ -21,7 +21,7 @@ function slideshow_init(){
 'add_new_item'=>'Ajout un nouveau slide',
 'edit_item'=> 'Editer un slide',
 'new_item' => 'Nouvelle slide',
-'view_item' => 'voir le slide',
+'view_item' => 'voir l\' Slide',
 'search_items' => 'Recherche un slide',
 'not_found' => 'aucun slide',
 'not_found_in_trash' => 'aucun slide dans la corbeille',
@@ -32,15 +32,15 @@ function slideshow_init(){
     /* permet d'initialiser les fonctionnalité du slideshow*/
     register_post_type('slide', array(
 
-        'public'=>true,
-        'publicly_queryable' =>false,
+        'public'=> true,
+        'publicly_queryable' => false,
         'labels'=> $labels,
         'menu_position'=> 9,
         'capability_type'=> 'post',
         'supports'=> array('title', 'thumbnail'),
     ));
     /* Ajouter la taille de l'image */
-    add_image_size('slider', 1200, 600, true);
+    add_image_size('slider', 1920, 1501, true); 
 }
 
 /* Permet de gérer les metaboxes */
@@ -56,7 +56,7 @@ function slideshow_metabox($object){
 <h4>Lien de ce slide</h4>
 </div>
 <div class="meta-box-item-content">
-<input type="text" name="slideshow_link" style="width:100%;" value="<?= get_post_meta($object->ID, '_link', true); ?>">
+<input type="text" name="slideshow_link" style="width:1200px; " value="<?= get_post_meta($object->ID, '_link', true); ?>">
 </div>
     <?php
 
@@ -92,7 +92,7 @@ while($slides->have_posts()){
     /*Récupération les informations contenant l'article */
     global $post;
 
-    the_post_thumbnail('slider',array('style' =>'width:2000px!important;'));
+    the_post_thumbnail('slider',array('style' =>'width:1920px!important;'));
     
 }
 echo '</div>';
