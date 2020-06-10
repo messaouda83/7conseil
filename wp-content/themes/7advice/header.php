@@ -11,8 +11,9 @@
 <body>
  
 <header>
+
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <nav class="navbar navbar-expand-lg navbar-white fixed-top bg">
+        <nav class="navbar navbar-expand-lg my-navbar-color fixed-top bg">
             <a class="navbar-brand text-bold font-italic col-2" href="#"><?php bloginfo('name') ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
           
@@ -62,10 +63,39 @@
                         <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
                 </ul> -->
-                <?= get_search_form() ?>
+ <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
 
-            </div>
+        <div class="search-box">
+            <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" placeholder="Search here..." />
+            <button type="submit" id="searchsubmit" value="Search" class="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+</form>
+</div>
 
         </nav>
-       
+        <?php
+if ( has_header_image() ) {
+    $header_image_data = get_theme_mod( 'header_image_data' );
+    echo wp_get_attachment_image( $header_image_data->attachment_id, 'full' );
+}
+?> 
+ <div class="context">
+        <h1>Bienvenue au sevenConseil</h1>
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
     </header>
