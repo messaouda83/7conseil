@@ -8,7 +8,7 @@
 
         <!-- Grid column -->
         <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">Get connected with us on social networks!</h6>
+          <h6 class="mb-0">Connectez-vous avec nous sur les réseaux sociaux!</h6>
         </div>
         <!-- Grid column -->
 
