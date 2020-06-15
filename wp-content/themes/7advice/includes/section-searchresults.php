@@ -16,7 +16,7 @@
 
 					<?php the_excerpt(); ?>
 
-					<a href="<?php the_permalink(); ?>" class="btn btn-success">Lire plus</a><!--Ajoute un lien-->
+					<a href="<?php the_permalink(); ?>" class="btn btn-primary text-color">Lire plus</a><!--Ajoute un lien-->
 
 				</div>
 

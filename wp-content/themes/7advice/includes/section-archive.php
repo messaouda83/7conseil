@@ -5,7 +5,7 @@ if( have_posts() ): while( have_posts() ): the_post(); ?>
     <div class="card-body">
 <h3><?php the_title(); ?></h3>
     <?php the_excerpt(); ?>
-    <a href="<?php the_permalink(); ?>" class="btn btn-success">Lire plus...</a>
+    <a href="<?php the_permalink(); ?>" class="btn btn-primary text-color">Lire plus...</a>
     </div>
  </div>
 <?php endwhile; else: endif;?>

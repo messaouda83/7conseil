@@ -11,7 +11,7 @@ if( have_posts() ): while( have_posts() ): the_post(); ?>
   <?php 
   $tags = get_the_tags();
   foreach($tags as $tag): ?>
-  <a href=" <?php echo get_tag_link($tag->term_id);?>" class="badge badge-success">
+  <a href=" <?php echo get_tag_link($tag->term_id);?>" class="badge badge-primary">
 <?php echo $tag->name; ?>
   </a>
   <?php endforeach; ?>
