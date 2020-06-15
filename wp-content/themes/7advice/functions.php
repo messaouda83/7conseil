@@ -44,6 +44,7 @@ function load_js()
 {
     wp_enqueue_script('jquery'); //<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     wp_enqueue_script( 'smoothup', get_template_directory_uri() . '/js/gototop.js', array( 'jquery' ), '',  true );
+    wp_enqueue_script( 'glowingbirds', get_template_directory_uri() . '/js/burdsanime.js', array( 'jquery' ), '',  true );
     wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/togglechangeform.js', array( 'jquery' ), '',  true );
 	wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true); //<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
@@ -93,6 +94,7 @@ register_sidebar(
     );
 }
 add_action('widgets_init', 'my_sidebars');
+
 /**
  * Register Custom Navigation Walker
  */
@@ -100,6 +102,8 @@ function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+
+
 
 add_action( 'phpmailer_init', 'send_smtp_email' );
 function send_smtp_email( $phpmailer ) {
