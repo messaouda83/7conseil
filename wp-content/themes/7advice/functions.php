@@ -45,7 +45,7 @@ function load_js()
     wp_enqueue_script('jquery'); //<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     wp_enqueue_script( 'smoothup', get_template_directory_uri() . '/js/gototop.js', array( 'jquery' ), '',  true );
     wp_enqueue_script( 'glowingbirds', get_template_directory_uri() . '/js/burdsanime.js', array( 'jquery' ), '',  true );
-    wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/togglechangeform.js', array( 'jquery' ), '',  true );
+   // wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/togglechangeform.js', array( 'jquery' ), '',  true );
 	wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true); //<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 	wp_enqueue_script('bootstrap');
@@ -57,7 +57,7 @@ add_action('wp_enqueue_scripts', 'load_js');
 add_theme_support('menus'); // Ajoute l'option "Menus" dans Wordpress -> Apparence
 add_theme_support('post-thumbnails'); // Ajoute l'option "Image mise en avant" lors de l'édition d'un article
 // tailles d'image personnalisées
-add_image_size('blog-large', 800, 400, true);
+add_image_size('blog-large', 1200, 800, true);
 add_image_size('blog-small', 300, 200, true);
 add_theme_support('widgets'); // Ajoute l'option "Widgets" dans Wordpress -> Apparence
 
@@ -103,27 +103,16 @@ function register_navwalker(){
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 
-
-
-add_action( 'phpmailer_init', 'send_smtp_email' );
-function send_smtp_email( $phpmailer ) {
+add_action('phpmailer_init', 'custom-mailer');
+function custom_mailer(PHPMailer $phpmailer){
+    $phpmailer -> SetFrom('info@mailtrap.io', 'Mailtrap Team');
+    $phpmailer->Host = 'smtp.mailtrap.io';
+    $phpmailer->Port =25;
+    $phpmailer->SMTPAuth = true;
+    $phpmailer->SMTPSecure ='tls';
+    $phpmailer->Username ='sevenconseil';
+    $phpmailer->Password ='sevenconseil';
     $phpmailer->isSMTP();
-    $phpmailer->Host       = SMTP_HOST;
-    $phpmailer->SMTPAuth   = SMTP_AUTH;
-    $phpmailer->Port       = SMTP_PORT;
-    $phpmailer->SMTPSecure = SMTP_SECURE;
-    $phpmailer->Username   = SMTP_USERNAME;
-    $phpmailer->Password   = SMTP_PASSWORD;
-    $phpmailer->From       = SMTP_FROM;
-    $phpmailer->FromName   = SMTP_FROMNAME;
+
 }
 
-/* Header image wordpress.*/
-/* 
-function my_theme_setup() {
-    add_theme_support( 'custom-header', array(
-        'width'  => 2000,
-        'height' => 500,
-    ) );
-}
-add_action( 'after_theme_setup', 'my_theme_setup' ); */
