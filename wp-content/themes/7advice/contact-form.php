@@ -79,7 +79,7 @@ if(isset($_POST['submitted'])) {
 
 	<div class="thanks">
 		<h1>Merci, <?=$name;?></h1>
-		<p>Votre e-mail a &eacute;t&eacute; envoy&eacute; avec succ&egrave;s. Vous recevrez une r&eacute;ponse sous peu.</p>
+		<p>Votre message a été envoyé avec succès -</p>
 	</div>
 
 <?php } else { ?>
@@ -91,38 +91,38 @@ if(isset($_POST['submitted'])) {
 		<?php the_content(); ?>
 		
 		<?php if(isset($hasError) || isset($captchaError)) { ?>
-			<p class="error">Une erreur est survenue lors de l'envoi du formulaire.</p>
+			<p class="error text-center mt-3">Une erreur est survenue lors de l'envoi du formulaire.</p>
 		<?php } ?>
-	
-		<form action="<?php the_permalink(); ?>" id="contactForm" method="post">
-	
-			<ol class="forms">
+		
+		<div class="container">
+		<form action="<?php the_permalink(); ?>" id="contactForm" class=" form-horizontal text-center mt-5" method="post">
+	    <h1>Contactez-nous</h1>
+			<ol class="forms mx-auto">
 				<li><label for="contactName">Nom</label>
-					<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="requiredField" />
+					<input type="text" name="contactName" id="contactName" class="form-control mb-3"  placeholder="Nom" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="requiredField" />
 					<?php if($nameError != '') { ?>
 						<span class="error"><?=$nameError;?></span> 
 					<?php } ?>
 				</li>
 				
-				<li><label for="email">E-mail</label>
-					<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="requiredField email" />
+				<li><label for="email">Email</label>
+					<input type="text" name="email" id="email"  class="form-control mb-3" name="email" placeholder="Email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="requiredField email" />
 					<?php if($emailError != '') { ?>
 						<span class="error"><?=$emailError;?></span>
 					<?php } ?>
 				</li>
 				
-				<li class="textarea"><label for="commentsText">Message</label>
-					<textarea name="comments" id="commentsText" rows="20" cols="30" class="requiredField"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
+				<li class="textarea mx-auto"><label for="commentsText">Message</label>
+					<textarea name="comments" id="commentsText" rows="10" class="form-control requiredField mb-3" placeholder="Votre message..."><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
 					<?php if($commentError != '') { ?>
 						<span class="error"><?=$commentError;?></span> 
 					<?php } ?>
 				</li>
-				<li class="inline"><input type="checkbox" name="sendCopy" id="sendCopy" value="true"<?php if(isset($_POST['sendCopy']) && $_POST['sendCopy'] == true) echo ' checked="checked"'; ?> /><label for="sendCopy">Recevoir une copie du message</label></li>
-				<li class="screenReader"><label for="checking" class="screenReader">Pour envoyer ce formulaire, ne saisissez RIEN dans ce champ</label><input type="text" name="checking" id="checking" class="screenReader" value="<?php if(isset($_POST['checking']))  echo $_POST['checking'];?>" /></li>
-				<li class="buttons"><input type="hidden" name="submitted" id="submitted" value="true" /><button type="submit">Envoyer</button></li>
+	
+				<li class="buttons"><input type="hidden" name="submitted" id="submitted" value="true" /><button type="submit" class=" btn bg text-white w-25">Envoyer</button></li>
 			</ol>
 		</form>
-	
+		</div>
 		<?php endwhile; ?>
 	<?php endif; ?>
 <?php } ?>
