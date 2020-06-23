@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>7conseil</title>
     <?php wp_head(); ?>
-
+    
 </head>
 <body>
  
