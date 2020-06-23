@@ -7,7 +7,7 @@
          dynamic_sidebar('page-sidebar'); 
          endif;
 </div> -->
-<div class="col-lg-9">
+<div class="col-lg-12">
         <h1 class="mb-3"><?php the_title(); ?></h1>
         <?php get_template_part('includes/section', 'content'); ?>
 </div>
