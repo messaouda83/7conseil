@@ -8,7 +8,7 @@
 
 		<section class="row">
 
-			<div class="col-lg-9">
+			<div class="col-lg-12">
 
 				<h1 class="mt-5">Résultats de recherche '<?php echo get_search_query();?>'</h1><!--Affiche le nom de la recherche sur la page-->
 				<!--<h1><?php the_title(); ?></h1>-->
