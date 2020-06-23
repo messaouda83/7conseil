@@ -28,7 +28,7 @@
             <i class="fab fa-google-plus-g white-text mr-4"> </i>
           </a>
           <!--Linkedin -->
-          <a class="li-ic">
+          <a class="li-ic" href="https://www.linkedin.com/in/abdelhakimbenzekri/" target="_blank">
             <i class="fab fa-linkedin-in white-text mr-4"> </i>
           </a>
           <!--Instagram-->
