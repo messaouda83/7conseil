@@ -10,7 +10,7 @@
         <?php endif;?>
    </div>
 </section>
-<div class="col-lg-9">
+<div class="col-lg-12">
     <?php get_template_part('includes/section', 'archive'); ?>
    <?php previous_posts_link(); ?>
    <?php next_posts_link(); ?>
